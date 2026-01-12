@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Acceso</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div style="font-weight:800;font-size:20px;margin-bottom:10px">Acceso</div>
+
+      <form id="loginForm">
+        <input class="input" id="email" type="email" placeholder="Email" required>
+        <div style="height:10px"></div>
+        <input class="input" id="password" type="password" placeholder="Contraseña" required>
+        <div style="height:12px"></div>
+        <button class="btn" style="width:100%">Entrar</button>
+      </form>
+
+      <div id="err" class="small" style="color:#ff8fa3;margin-top:10px"></div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+
+  <script src="/js/firebase.js"></script>
+  <script src="/js/guard.js"></script>
+  <script src="/auth/auth.js"></script>
+</body>
+</html>
